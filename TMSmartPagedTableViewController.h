@@ -13,7 +13,7 @@
 #define TMAddNewCellsNotification @"addNewCellsNotification"
 
 
-@interface TMSmartPagedTableViewController : UITableViewController <UISearchDisplayDelegate>
+@interface TMSmartPagedTableViewController : UIViewController <UISearchDisplayDelegate, UITableViewDataSource, UITableViewDelegate>
 
 @property (strong, nonatomic) NSArray * data;
 @property (strong, nonatomic) NSArray * searchResults;
